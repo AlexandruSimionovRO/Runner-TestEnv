@@ -1,1 +1,10 @@
+name: Must Run on custom Runner
 
+on: push
+
+jobs:
+  init:
+    runs-on: Linux
+    steps:
+      - run: echo "Hello Cloud gurus!!!"
+      - run: echo $HOSTNAME
